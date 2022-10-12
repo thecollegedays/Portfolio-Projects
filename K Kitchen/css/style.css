@@ -4,12 +4,24 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/pexels-pixabay-326281.jpg);*/
+    background: url(../img/pexels-jer-chung-2116090.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.all_sections{
+main{
     width: 80%;
     margin: 0 auto;
+    background-color: rgba(124, 168, 153, 0.5);
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.all_sections{
 }
 
 
@@ -17,9 +29,11 @@ body {
 header{
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
 }
 ul{
     list-style-type: none;
+    text-decoration: none;
 }
 
 nav ul li {
@@ -29,19 +43,20 @@ nav ul li {
 #main_logo{
     max-width: 10%;
     border-radius: 50%;
+    background: transparent;
 }
 
 
 /*Styling the main section of the page*/
-.all_sections{
-    width: 80%;
+section{
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 p{
     display: inline-block;
-    max-width: 49%;
+    max-width: 40%;
 }
 
 #story_img{
@@ -50,7 +65,6 @@ p{
 }
 
 .contact_section{
-    background-color: aqua;
     display: inline-block;
     height: 100%;
     width: 49.7%;
