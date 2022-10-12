@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all_sections{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*Styling the header and Nav*/
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ul{
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#main_logo{
+    max-width: 10%;
+    border-radius: 50%;
+}
+
+
+/*Styling the main section of the page*/
+.all_sections{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+    max-width: 49%;
+}
+
+#story_img{
+    max-width: 40%;
+    ali
+}
+
+.contact_section{
+    background-color: aqua;
+    display: inline-block;
+    height: 100%;
+    width: 49.7%;
+}
+
+
+/*Styling the footer*/
+footer{
+    text-align: center;
+}
