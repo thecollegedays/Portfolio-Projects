@@ -6,11 +6,14 @@
 body {
     /*font-family: Arial, Helvetica, sans-serif;
     background-image: url(../img/pexels-pixabay-326281.jpg);*/
-    background: url(../img/pexels-jer-chung-2116090.jpg) no-repeat center center fixed; 
+    background: url(../img/pexels-archie-binamira-970105.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin: 0;
+    color: white;
+
 }
 
 main{
@@ -19,38 +22,47 @@ main{
     background-color: rgba(124, 168, 153, 0.5);
     font-size: large;
     font-weight: bold;
-    color: white;
 }
-.all_sections{
+header p{
+    text-align: center;
+    padding: 2em;
 }
 
 
 /*Styling the header and Nav*/
-header{
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+nav{
+    position: sticky;
+    text-align: end;
+    font-size: x-large;
+    top:0;
 }
+
 ul{
     list-style-type: none;
-    text-decoration: none;
 }
 
 nav ul li {
     display: inline;
 }
 
+a{
+    text-decoration: none;
+    margin-right: 2em;
+    color: aliceblue;
+}
+a:hover{
+    color: aquamarine;
+    transition: 1s;
+}
+
 #main_logo{
-    max-width: 10%;
+    max-width: 8%;
     border-radius: 50%;
-    background: transparent;
 }
 
 
 /*Styling the main section of the page*/
 section{
-    width: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -61,17 +73,45 @@ p{
 
 #story_img{
     max-width: 40%;
-    ali
+    border-radius: 30%;
 }
 
 .contact_section{
     display: inline-block;
-    height: 100%;
-    width: 49.7%;
+    width: 49%;
 }
 
+#contact{
+    display: flex;
+}
+
+#container {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin-top: 2em;
+}
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+#responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*Styling the footer*/
 footer{
     text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+#coming_soon{
+    max-width: 50%;
 }
