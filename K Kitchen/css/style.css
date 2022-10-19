@@ -3,17 +3,56 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: charmonman;
+    src: url(../fonts/Charmonman/Charmonman-Bold.ttf);
+    font-weight: bold;
+}
+  
+@font-face {
+    font-family: charmonman;
+    src: url(../fonts/Charmonman/Charmonman-Regular.ttf);
+}
+
+@font-face {
+    font-family: noto-sans-hk;
+    src: url(../fonts/Noto_Sans_HK/NotoSansHK-Thin.otf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: noto-sans-hk;
+    src: url(../fonts/Noto_Sans_HK/NotoSansHK-Light.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: noto-sans-hk;
+    src: url(../fonts/Noto_Sans_HK/NotoSansHK-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: noto-sans-hk;
+    src: url(../fonts/Noto_Sans_HK/NotoSansHK-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: noto-sans-hk;
+    src: url(../fonts/Noto_Sans_HK/NotoSansHK-Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: noto-sans-hk;
+    src: url(../fonts/Noto_Sans_HK/NotoSansHK-Black.otf);
+    font-weight: 900;
+}
+
 body {
-    /*font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/pexels-pixabay-326281.jpg);*/
-    background: url(../img/pexels-archie-binamira-970105.jpg) no-repeat center center fixed; 
+    background: url(../img/pexels-ella-olsson-1640770.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    color: white;
-
+    font-family: ;
 }
 
 main{
@@ -22,42 +61,64 @@ main{
     background-color: rgba(124, 168, 153, 0.5);
     font-size: large;
     font-weight: bold;
-}
-header p{
-    text-align: center;
-    padding: 2em;
+    color: aliceblue;
+
 }
 
 
 /*Styling the header and Nav*/
+header{
+    font-family: charmonman;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    color: aliceblue;
+
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+header p {
+    font-family: noto-sans-hk;
+    font-size: large;
+}
+
 nav{
     position: sticky;
-    text-align: end;
+    text-align: center;
     font-size: x-large;
     top:0;
 }
 
 ul{
     list-style-type: none;
+    margin: 0;
+    max-width: 100%;
 }
 
 nav ul li {
     display: inline;
+    margin: 6%;
 }
 
-a{
+nav ul li a{
     text-decoration: none;
-    margin-right: 2em;
     color: aliceblue;
+    font-family: 'noto-sans-hk';
+    font-weight: 400;
 }
+
 a:hover{
     color: aquamarine;
     transition: 1s;
 }
 
 #main_logo{
-    max-width: 8%;
+    max-width: 7%;
     border-radius: 50%;
+    margin: 1em;
 }
 
 
@@ -68,21 +129,30 @@ section{
 
 p{
     display: inline-block;
-    max-width: 40%;
+    max-width: 100%;
+    font-size: larger;
+    font-family: 'noto-sans-hk';
+    font-weight: 300;
 }
+
 
 #story_img{
-    max-width: 40%;
-    border-radius: 30%;
+    margin: 50% 15%;
+    max-width: 70%;
+    border-radius: 50%;
 }
 
-.contact_section{
+
+.main-block{
+    display: flex;
+    padding-top: 2em;
+}
+.story-block{
+    padding-left: 4.5em;
+}
+.contact-block{
     display: inline-block;
     width: 49%;
-}
-
-#contact{
-    display: flex;
 }
 
 #container {
@@ -93,7 +163,7 @@ p{
     margin-top: 2em;
 }
   
-  /* Then style the iframe to fit in the container div with full height and width */
+  /* Style the iframe to fit in the container div with full height and width */
 #responsive-iframe {
     position: absolute;
     top: 0;
@@ -104,14 +174,38 @@ p{
     height: 100%;
 }
 
+h2{
+    font-size: 5em;
+    font-size: 5em;
+    font-family: 'charmonman';
+    margin: 1.5em 0em 1em;
+}
+
+table{
+    margin: 0 auto;
+    width: 90%;
+}
 /*Styling the footer*/
 footer{
     text-align: center;
     font-weight: bold;
     font-size: large;
+    color: black;
 }
 
+footer a{
+    text-decoration: none;
+    color: black;
+
+}
 
 #coming_soon{
     max-width: 50%;
+}
+
+/*galary table styling*/
+td img{
+    background-color: blue;
+    max-width: 50%;
+    border-radius: 50%;
 }
